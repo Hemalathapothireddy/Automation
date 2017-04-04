@@ -1,5 +1,5 @@
 package practice;
-
+//Encapsulation
 public class ClassA {
 	private int a;
 	private String name;
