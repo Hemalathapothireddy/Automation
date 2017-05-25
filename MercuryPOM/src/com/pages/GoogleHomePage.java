@@ -3,7 +3,7 @@ package com.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+//one page one class
 public class GoogleHomePage {
 	WebDriver driver;
 	public GoogleHomePage(WebDriver driver){
