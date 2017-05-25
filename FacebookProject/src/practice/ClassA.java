@@ -1,21 +1,16 @@
 package practice;
 //Encapsulation
 public class ClassA {
-	private int a;
-	private String name;
 	
-	public void setI(int b){
-	a=b;
+	public void add(){
+		System.out.println("this is add method from classA");
 	}
-  public void setS(String name){
-	  this.name= name;
-  }
-  public int getI(){
-	return a;
-	  
-  }
-  public String getS(){
-	return name;
-	  
-  }
+		public ClassA(){
+			System.out.println("this is from constructor from classA");
+		}
+		
+		public void multiply(){
+			System.out.println("this is from multiply from classA");
+		}
+	
 }

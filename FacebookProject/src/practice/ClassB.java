@@ -13,13 +13,23 @@ import org.openqa.selenium.interactions.Actions;
 public class ClassB  {
 	
 	
-	public static void main(String[] args)  {
-		ClassA obj=new ClassA();
-		obj.setI(12);
-		obj.setS("jay");
-		System.out.println(obj.getI());
-		System.out.println(obj.getS());
+	public static void main(String[] args) throws InterruptedException  {
+		WebDriver driver=new ChromeDriver();
+		driver.get("http://www.kesinenitravels.com/");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(".//button[text()='Search']")).click();
+		Alert alert=driver.switchTo().alert();
+		System.out.println(alert.getText());
+		alert.accept();
 		
-		}
-}
+		
+		
+		
+		
+		
+		
+		
+	}
+	}
 
